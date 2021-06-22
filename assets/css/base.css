@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: #ee4d2d; /*rgba(238, 77, 45,1);*/
 }
 
 * {
@@ -29,4 +30,15 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

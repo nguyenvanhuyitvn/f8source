@@ -10,23 +10,106 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 <body>
     <div class="app">
         <header class="header">
             <nav class="header__navbar grid">
                 <ul class="header__navbar-list">
-                    <li class="header__navbar-item header__navbar-item--separate">Vào cửa hảng trên ứng dụng F8-Shop</li>
-                    <li class="header__navbar-item">Kết nối</li>
+                    <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                        Vào cửa hảng trên ứng dụng F8-Shop
+                        <div class="header__qr">
+                            <img src="./assets/img/qr_code.png" alt="QR Code" class="header_qr-img">
+                            <div class="header_qr-apps">
+                                <a href="#" class="header__qr-link">
+                                    <img src="./assets/img/google_play.png" alt="Google Play" class="header_qr-download-img">
+                                </a>
+                                <a href="#" class="header__qr-link">
+                                    <img src="./assets/img/app_store.png" alt="App Store" class="header_qr-download-img">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header_navbar-title--no-pointer">Kết nối</span>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fab fa-instagram"></i>
+                        </a>
+                    </li>
                 </ul>
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item">
-                        <a href="" class="header__navbar-item-link">Thông báo</a>
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fas fa-bell"></i>
+                            Thông báo
+                        </a>
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>Thông báo mới nhận</h3>
+                            </header>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="#" class="header__notify-link">
+                                        <img src="./assets/img/ohui.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                            <span class="header__notify-description">Mô tả mỹ phẩm Ohui chính hãng</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item">
+                                    <a href="#" class="header__notify-link">
+                                        <img src="./assets/img/ohui.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                            <span class="header__notify-description">Kem trắng da, chống lão hóa Ohui Phyto Vital Prime Advancer Ampoule Capture Cream</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item">
+                                    <a href="#" class="header__notify-link">
+                                        <img src="./assets/img/ohui.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                            <span class="header__notify-description">Kem trắng da, chống lão hóa Ohui Phyto Vital Prime Advancer Ampoule Capture Cream</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item">
+                                    <a href="#" class="header__notify-link">
+                                        <img src="./assets/img/ohui.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                            <span class="header__notify-description">Kem trắng da, chống lão hóa Ohui Phyto Vital Prime Advancer Ampoule Capture Cream</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item">
+                                    <a href="#" class="header__notify-link">
+                                        <img src="./assets/img/ohui.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                            <span class="header__notify-description">Kem trắng da, chống lão hóa Ohui Phyto Vital Prime Advancer Ampoule Capture Cream</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__notify-footer">
+                                <a href="#" class="header__notify-footer-btn">Xem tất cả</a>
+                            </footer>
+                        </div>
                     </li>
                     <li class="header__navbar-item">
-                        <a href="" class="header__navbar-item-link">Trợ giúp</a>
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon far fa-question-circle"></i>
+                            Trợ giúp
+                        </a>
                     </li>
-                    <li class="header__navbar-item header__navbar-item--strong">Đăng ký</li>
+                    <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
                     <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
                 </ul>
             </nav>
