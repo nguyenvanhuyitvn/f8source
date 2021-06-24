@@ -5,6 +5,10 @@
     --text-color: #333;
     --primary-color: #ee4d2d; /*rgba(238, 77, 45,1);*/
     --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -44,6 +48,16 @@ html {
     }
 }
 
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
 /* Modal */
 
 .modal {
@@ -64,8 +78,11 @@ html {
 
 
 .modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
     margin: auto;
     z-index: 1;
+    animation: growth linear 0.1s;
 }
 
 /* BUTTON STYLE */
@@ -84,6 +101,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.6rem;
 }
 .btn.btn-normal:hover {
     background-color: rgba(0,0,0,0.08);
